@@ -20,8 +20,8 @@ body {
 }
 
 header {
-    height: 120px;
     width: 100%;
+    height: 120px;
 }
 
 .header-discount,
@@ -56,22 +56,22 @@ header {
 /* -- HERO -- */
 .hero {
     width: 100%;
-    height: 400px;
+    min-height: 500px; 
     background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/wallpaper.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: center center;
-    display: flex; 
+    background-position: center;
+    display: flex;
 }
 
 .text-hero {
-    color: var(--white);
-    margin-left: 160px;
+    width: 460px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 460px;
+    color: var(--white);
+    margin-left: 160px;
 }
 
 .text-hero h2 {
@@ -88,7 +88,7 @@ header {
 }
 
 
-/* -- HERO -- */
+/* -- MAIN -- */
 .main-container {
     max-width: 1240px;
     margin: 0 auto;
@@ -100,36 +100,34 @@ header {
 }
 
 .main-title h2 {
-    color: var(--black-light);
     font-size: 32px;
     font-weight: 600;
     font-style: normal;
     line-height: 62.78px;
+    color: var(--black-light);
 }
 
 .main-title p {
-    color: var(--gray);
-    font-weight: 500;
     font-size: 18px;
+    font-weight: 500;
     line-height: 35.31px;
+    color: var(--gray);
 }
 
 .main-cards {
-    margin-top: 60px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
     justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    
+    margin-top: 60px;
 }
 
 .card {
     width: 300px;
     height: 300px;
-    background: var(--white-200);
     display: flex;
     align-items: center;
     justify-content: center;
+    background: var(--white-200);
     margin-bottom: 40px;
     border-radius: 5px;
 }
@@ -141,11 +139,145 @@ header {
 
 /* -- FOOTER -- */
 footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 60px;
     margin-top: 60px;
     background: var(--black-light);
     color: var(--white);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
+
+footer p {
+    font-size: 18px;
+}
+
+
+/* -- MEDIA QUERIES -- */
+
+/* Extra Large devices*/
+@media (max-width: 1200px) {
+    .text-hero {
+        margin-left: 100px;
+    }
+    
+    .main-container {
+        max-width: 1140px;
+    }
+    
+    .main-cards {
+        padding: 0px 20px;
+    }
+} 
+
+/* Large devices*/
+@media (max-width: 976px) {
+    .hero {
+        background-size: auto;
+
+    }
+    
+    .text-hero {
+        margin-left: 60px;
+    }
+    
+    .main-container {
+        max-width: 927px;
+    }
+    
+    .main-cards {
+        padding: 0px 8px;
+        justify-content: space-around;
+    }
+} 
+
+/* Medium devices*/
+@media (max-width: 620px) {
+    .text-hero {
+        margin-left: 20px;
+    }
+    
+    .text-hero h2 {
+        font-size: 28px;
+        line-height: 34.13px;
+    }
+
+    .text-hero p {
+        font-size: 16px;
+        line-height: 28.6px;
+    }
+    
+    .main-container {
+        max-width: 589px;
+    }
+
+    .main-title {
+        padding: 0px 10px;
+    }
+
+    .main-title h2 {
+        font-size: 28px;
+        line-height: 54.93px;
+    }
+
+    .main-title p {
+        font-size: 16px;
+        line-height: 28.8px;
+    }
+    
+    .main-cards {
+        grid-template-columns: repeat(auto-fill, 374px);
+        justify-content: center;
+        padding: 0px 0px;
+    }
+
+    .card {
+        width: 374px;
+        height: 302px;
+    }
+
+    footer {
+        margin-top: 30px;
+    }
+} 
+
+/* Small devices*/
+@media (max-width: 414px) {
+    .hero {
+        background-position: left top;
+    }
+    
+    .text-hero {
+        margin-left: 10px;
+    }
+
+    .text-hero h2,
+    .text-hero p {
+        padding: 0px 10px;
+    }
+    
+    .main-container {
+        max-width: auto;
+    }
+    
+    .main-cards {
+        grid-template-columns: repeat(auto-fill, 280px);
+        justify-content: center;
+        padding: 0px 0px;
+    }
+
+    .card {
+        width: 280px;
+    }
+
+    footer p {
+        font-size: 16px;
+    }
+} 
+
+@media (max-width: 360px) {
+    .main-title h2,
+    .main-title p {
+        padding: 0px 8px;
+    }
 }
