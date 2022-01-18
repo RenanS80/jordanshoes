@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+
+:root {
+    --white: #F9F9F9;
+    --white-200: #EBE9EA;
+    --black-light: #181818;
+    --gray: #474747;
+}
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--white);
+}
+
+header {
+    height: 120px;
+    width: 100%;
+}
+
+.header-discount,
+.header-brand {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-discount {
+    background: var(--black-light);
+    color: var(--white);
+}
+
+.header-discount p{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.header-brand {
+    background: var(--white);
+    color: var(--black-light);
+}
+
+.header-brand h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+/* -- HERO -- */
+.hero {
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/wallpaper.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    display: flex; 
+}
+
+.text-hero {
+    color: var(--white);
+    margin-left: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 460px;
+}
+
+.text-hero h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+}
+
+.text-hero p {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 35.31px;
+    font-style: normal;
+}
+
+
+/* -- HERO -- */
+.main-container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.main-title {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.main-title h2 {
+    color: var(--black-light);
+    font-size: 32px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 62.78px;
+}
+
+.main-title p {
+    color: var(--gray);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 35.31px;
+}
+
+.main-cards {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    background: var(--white-200);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    border-radius: 5px;
+}
+
+.card img {
+    width: 250px;
+}
+
+
+/* -- FOOTER -- */
+footer {
+    height: 60px;
+    margin-top: 60px;
+    background: var(--black-light);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
