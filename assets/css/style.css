@@ -7,7 +7,8 @@
     --gray: #474747;
     --fb-blue: #3b5998;
     --insta-pink: #c13584;
-    --disc-roxo: #ca45eb;
+    --whats-gren: #196d1d;
+    --email-red: #9e0606;
 }
 
 * {
@@ -146,17 +147,38 @@ header {
 
 /* -- FOOTER -- */
 footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 60px;
-    margin-top: 60px;
+    text-align: center;
+    width: 100%;
+    padding: 0 0 10px 0;
+    position: absolute;
     background: var(--black-light);
     color: var(--white);
 }
 
 footer p {
     font-size: 18px;
+    padding: 20px 0;
+}
+.social_links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
+.social_links i {
+    padding: 10px;
+    color: grey;
+    font-size: 25px;
+}
+.logos:hover {
+    transition: 0.4s;
+    transform: translateY(-5px);
+}
+.social_links a .fa-facebook:hover {
+    color: var(--fb-blue);
+}
+.social_links a .fa-square-instagram:hover {
+    color: var(--insta-pink);
 }
 
 /* -- MEDIA QUERIES -- */
