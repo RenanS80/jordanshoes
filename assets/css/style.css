@@ -5,8 +5,8 @@
     --white-200: #ebe9ea;
     --black-light: #181818;
     --gray: #474747;
-    --fb-blue: #3b5998;
-    --insta-pink: #c13584;
+    --fb-blue: #4468b8;
+    --insta-pink: #e72895;
     --whats-gren: #196d1d;
     --email-red: #9e0606;
 }
@@ -179,6 +179,12 @@ footer p {
 }
 .social_links a .fa-square-instagram:hover {
     color: var(--insta-pink);
+}
+.social_links a .fa-whatsapp:hover {
+    color: var(--whats-gren);
+}
+.social_links a .fa-envelope:hover {
+    color: var(--email-red);
 }
 
 /* -- MEDIA QUERIES -- */
